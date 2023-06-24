@@ -30,6 +30,7 @@
                     <h5 class="card-title">{{ $message->title }}</h5>
                     <p class="card-text">{{ $message->content }}</p>
                     <div class="fw-light text-muted"><small>{{ Carbon\Carbon::parse($message->created_at)->diffForHumans() }}</small></div>
+                    <a href="/message/{{ $message->id }}" class="card-link">View</a>
                 </div>
             </div>
         @endforeach
