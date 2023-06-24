@@ -8,9 +8,11 @@
     <title>@yield('title')</title>
 </head>
 <body class="container">
-    <h1>Message Board App</h1><hr>
+    <div class="mt-3">
+        <h1>Message Board App</h1><hr>
     
-    <!-- Main Content to include here -->
-    @yield('content')
+        <!-- Main Content to include here -->
+        @yield('content')
+    </div>
 </body>
 </html>

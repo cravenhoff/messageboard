@@ -9,7 +9,11 @@
     <h5>Recent Messages:</h5>
     <ul>
         @foreach ($messages as $message)
-            <li>{{ $message->title }} - {{ $message->content }}</li>
+            <li class="mb-3">
+                <strong>{{ $message->title }}</strong><br> 
+                {{ $message->content }} <br>
+                {{ Carbon\Carbon::parse($message->created_at)->diffForHumans() }}
+            </li>
         @endforeach
     </ul>
 @endsection
