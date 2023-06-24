@@ -17,3 +17,4 @@ use App\Http\Controllers\MessageController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::post('/create', [MessageController::class, 'create']);
+Route::get('/message/{id}', [MessageController::class, 'view']);

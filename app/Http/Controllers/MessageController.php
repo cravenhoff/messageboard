@@ -20,4 +20,13 @@ class MessageController extends Controller
 
         return back();
     }
+
+    // Create a 'view' method to retrieve a single post record, based on the ID passed
+    public function view($id) {
+        $message = Message::findOrFail($id);
+        // echo $message->title;
+        return view('message', [
+            'message' => $message
+        ]);
+    }
 }
