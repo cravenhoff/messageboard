@@ -7,6 +7,8 @@
     <title>@yield('title')</title>
 </head>
 <body>
+    <h1>Message Board App</h1>
+    
     <!-- Main Content to include here -->
     @yield('content')
 </body>
