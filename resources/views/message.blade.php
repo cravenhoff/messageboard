@@ -13,4 +13,7 @@
             <div class="fw-light text-muted"><small>{{ Carbon\Carbon::parse($message->created_at)->diffForHumans() }}</small></div>
         </div>
     </div>
+    <div class="mt-3">
+        <a href="/">Back</a>
+    </div>
 @endsection
